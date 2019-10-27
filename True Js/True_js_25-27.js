@@ -80,3 +80,31 @@ console.log(myObj);
 
 let myObj2 = new Test(6);
 console.log(myObj2);
+
+console.log('=============================================================================')
+console.log('=============================================================================')
+
+
+let buffer = [
+    [1, 54, 33, 55],
+    [66, 2, 43, 22]
+]
+let summ = 0;
+// buffer.forEach(array => array.map(e => summ += 1)) 
+//     console.log(summ);
+
+vv = buffer.reduce((acc, b) => (acc+b.length), 0)
+console.log(vv);
+
+// let summ = 0;
+// let run = buffer.toString();
+// console.log(run);
+// let koko = run.map(e => summ += 1);
+// console.log(koko);
+
+
+// var arrr = ["Яблоко", "Апельсин", "Груша"];
+
+// arrr.forEach(function(item, i, arr) {
+//   console.log( arr.length );
+// });
