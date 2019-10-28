@@ -7,10 +7,10 @@ console.log(typeof null); //object -> mistake type = null. not object
 console.log(typeof function() {});// function 
 console.log(typeof NaN);// number
 
-// null => we have variable but she havent value
-// ndefined => let b, function that havent return
+// null => {} = null
+// undefined => let b, function that havent return
 console.log('===========================================================');
-// false values: '', 0, null, undefined, false
+// false values(5): '', 0, null, undefined, false
 console.log(Boolean('')); // false
 
 console.log(Boolean({})); // true
@@ -22,10 +22,10 @@ console.log(1 + '2');       // '12'
 console.log('' + 1 + 0);    // '10'
 console.log('' - 1 + 0);    // -1
 console.log('3' * '8');     // 24
-console.log(4 + 10 + 'px'); // 14px
+console.log(4 + 10 + 'px'); // '14px'
 console.log('px' + 5 + 10); // 'px510'
 console.log('42' - 40);     // 2
-console.log('42px' - 2);    // NaN
+console.log('42px' - 2);    // NaN      (NaN-2)=NaN
 console.log(null + 2);      // 2
 console.log(undefined+2);   // NaN
 console.log('======================= == vs === =========================');
