@@ -1,4 +1,5 @@
 // стрелочные не стрелочные
+
 //console.log(sum(1, 41)); // error
 const sum = (a, b) => {
     return a+b
@@ -13,7 +14,9 @@ console.log('===========const and let dont have hosting ===============');
 //console.log(a); //error 
 let a = 34 
 console.log(a); //34
+
 console.log('===========function declaration===========================');
+
 console.log(square(9));
 function square(numb) {
     return numb ** 2

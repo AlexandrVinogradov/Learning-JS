@@ -10,27 +10,21 @@ const items = [
     {name: 'Keyboard', price: 25  }
 ]
 
-const itemNames = items.map(i => {                                                            // map return new array
-    return i.name 
-}); console.log(itemNames);
-
-const filteredItems = items.filter(i => i.price <= 100);    console.log(filteredItems);       // map return new array
-const foundItem = items.find(i => i.name === 'Book');       console.log(foundItem);           // find return value first detected element || undefined
-items.forEach(i => console.log(i.price))                                                      // perform function to every element onece
-const hasInexpensiveItems = items.some(i => i.price <=10);  console.log(hasInexpensiveItems); // return true/false (at least one value)
-const allMostExpensive = items.every(i => i.price >=1000);  console.log(hasInexpensiveItems); // return true/false (if all elements satisfy the condition)
-const total = items.reduce((summ, i) => i.price + summ, 0); console.log(total);               // summ without additional variable 
-
+const itemNames = items.map(i => { i.name });               console.log('MAP: ',      itemNames);           // map return new array
+const filteredItems = items.filter(i => i.price <= 100);    console.log('FILTER: ',   filteredItems);       // map return new array
+const foundItem = items.find(i => i.name === 'Book');       console.log('FIND: ',     foundItem);           // find return value first detected element || undefined
+items.forEach(i =>                                          console.log('FOREACH: ',  i.price))             // perform function to every element onece
+const hasInexpensiveItems = items.some(i => i.price <=10);  console.log('SOME: ',     hasInexpensiveItems); // return true/false (at least one value)
+const allMostExpensive = items.every(i => i.price >=1000);  console.log('EVERY: ',    hasInexpensiveItems); // return true/false (if all elements satisfy the condition)
+const total = items.reduce((summ, i) => i.price + summ, 0); console.log('REDUCE: ',   total);               // summ without additional variable 
 const items2 = [1, 2, 3, 4, 5] 
-const includesTwo = items2.includes(0);                     console.log(includesTwo);         // return true/false array contain whether value
+const includesTwo = items2.includes(0);                     console.log('INCLUDES: ', includesTwo);         // return true/false array contain whether value
+
+const buffer = [
+    [1, 4, 5],
+    [4, 4, 5],
+    [1, 4, 7],
+]
+const wut = buffer.reduce((acc, b) => (acc+b.length), 0);  console.log(wut);
 
 
-
-
-// const buffer = [
-//     [1, 4, 5],
-//     [4, 4, 5],
-//     [1, 4, 7],
-// ]
-
-// const element = buffer.map(i => i.reduce((summ, j) => summ+j), 0); console.log(element);

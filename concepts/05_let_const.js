@@ -26,4 +26,4 @@ obj.age = 22
 console.log(obj);
 obj.age = 55
 console.log(obj);
-obj = '' // we cant
+//obj = '' // we cant

@@ -8,8 +8,8 @@ let result = []
 //     })
 // }
 
-// result[2]()
-// result[4]()
+// result[2]() //5
+// result[4]() //5
 
 
 for (var i=0; i<5; i++) { 

@@ -19,3 +19,8 @@ console.log('dd', dd); // [1, 2, 3]
 
 let ee = [1, 2, 3, 4]
 console.log(cc === ee) // false
+console.log(dd === ee) // false
+
+let z = []
+let y = z.concat()
+console.log(z === y);

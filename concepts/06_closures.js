@@ -6,8 +6,8 @@ function sayHelloTo(name) {
     }
 }
 const helloToAlex = sayHelloTo("Alex")
-console.log(helloToAlex); // function
 helloToAlex(); // Hello Alex
+console.log(helloToAlex); // function
 
 console.log('==========================================================');
 function createFrameWorkManager() {
@@ -42,5 +42,5 @@ for (var i=0; i<fib.length; i++) {
         setTimeout(() => {
             console.log(`fib[${j}] = ${fib[j]}`);
         }, 1500);
-    })(i)
+    })(i) 
 }
