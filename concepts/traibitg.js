@@ -9,20 +9,21 @@
 // bestLenguage()
 // console.log(BLISJS);
 
-const createZoo = () => {
-    const animals = ['doog', 'cat']
+// const createZoo = () => {
+//     const animals = ['doog', 'cat']
 
-    return {
-        add: (animal) => {
-            animals.push(animal)
-        },
-        print: () => {
-            console.log(animals);
-        }
-    }
-}
+//     return {
+//         add: (animal) => {
+//             animals.push(animal)
+//         },
+//         print: () => {
+//             console.log(animals);
+//         }
+//     }
+// }
 
 
-const manager = createZoo()
-manager.add('mouse')
-manager.print()
+// const manager = createZoo()
+// manager.add('mouse')
+// manager.print()
+

@@ -16,3 +16,4 @@ let summa = (a, b) => {  // sum(2,3) == sum(2)(3) == 5
 }; 
 console.log( summa(2, 3) );
 console.log( summa(2)(3) );
+
