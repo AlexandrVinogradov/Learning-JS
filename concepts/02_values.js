@@ -14,8 +14,8 @@ console.log('d', d); // [1, 2, 3, 4]
 let cc = [1, 2, 3]
 let dd = cc.concat()
 dd.push(4)
-console.log('cc', cc); // [1, 2, 3, 4]
-console.log('dd', dd); // [1, 2, 3]
+console.log('cc', cc); // [1, 2, 3]
+console.log('dd', dd); // [1, 2, 3, 4]
 
 let ee = [1, 2, 3, 4]
 console.log(cc === ee) // false

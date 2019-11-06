@@ -10,7 +10,7 @@ Cat.prototype.voice = function() {
     console.log(`Cat ${this.name} says myay`);
 }
 
-const cat = new Cat('Cat', 'white')
+const cat = new Cat('Bob', 'white')
 
 console.log(Cat.prototype);
 console.log(cat);

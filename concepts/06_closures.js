@@ -44,3 +44,4 @@ for (var i=0; i<fib.length; i++) {
         }, 1500);
     })(i) 
 }
+

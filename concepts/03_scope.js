@@ -4,8 +4,8 @@ const funcA = () => {
     let a = 1
 
     const funcB = () => {
-
         let b = 2
+
         const funcC = () => {
             let c = 3
             console.log('funcC:', a, b, c); // 1 2 3 

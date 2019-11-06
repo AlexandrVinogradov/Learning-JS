@@ -11,7 +11,7 @@ person.knows('all', 'Bran')
 person.knows.call(jhon, 'nothin', 'Jhon')
 person.knows.apply(jhon, ['nothin', 'Jhon'])
 person.knows.call(jhon, ...['nothin', 'Jhon'])
-person.knows.bind(jhon, 'nothin', 'Jhon')() // return new functi, we can create new variable or call right now
+person.knows.bind(jhon, 'nothin', 'Jhon')() // return new function, we can create new variable or call right now
 
 console.log('====================================');
 
@@ -31,6 +31,8 @@ const obj = {num: 42}
 logThis.apply(obj)
 logThis.call(obj)
 logThis.bind(obj)()
+
+
 console.log('============== implicit way ================');
 const animal = {
     legs: 4, 

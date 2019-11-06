@@ -27,3 +27,25 @@
 // manager.add('mouse')
 // manager.print()
 
+
+
+class Dog {
+    constructor(name) {
+        this.myname = name;
+        this.voice = function() {
+            console.log('Hey, my name is ' + this.myname);
+        }
+    }
+}
+const animal = new Dog('Bruno');
+animal.voice();
+
+// function Dog(name) {
+//     this.myname = name;
+//     this.voice = function() {
+//         console.log('Hey, my name is ' + this.myname);
+//     }
+// }
+
+// const animal = new Dog('Bruno');
+// animal.voice();
