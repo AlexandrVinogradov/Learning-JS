@@ -49,3 +49,16 @@ animal.voice();
 
 // const animal = new Dog('Bruno');
 // animal.voice();
+
+var foo = {n: 1};
+var bar = foo;
+foo.x = foo = {n: 2};
+console.log(foo.x);
+
+foo.x = {
+    n: 1
+    x: {
+        n: 2
+    }
+}
+
