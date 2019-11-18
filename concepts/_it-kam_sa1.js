@@ -1,25 +1,26 @@
-// let a = {}
-// a.name = 'Sam';
-// a['color'] = 'red';
-// console.log(a);
+let a = {}
+a.name = 'Sam';
+a['color'] = 'red';
+console.log(a);
 
 
-// var d = {}
-// const arr = ['zebra', 'horse']
-// arr.forEach(function(k) {
-//     d[k] = undefined;
-// })
-// console.log(d);
+var d = {}
+const arr = ['zebra', 'horse']
+arr.forEach(function(k) {
+    d[k] = undefined;
+})
+console.log(d);
 
 
 
-// for(let i=0; i<5; i++) {
-//     setTimeout( () => {console.log(i);}, i * 1000 )
-// }
+for(let i=0; i<5; i++) {
+    setTimeout( () => {console.log(i);}, i * 1000 )
+}
 console.log('========================== IT_KAM_SA1 =========================');
-// for( var i=0; i<5; i++) {
-//     ((j) => {     setTimeout(() => {console.log(j) },   i * 1000)     })(i)
-// }
+for( var i=0; i<5; i++) {
+    ((j) => {     setTimeout(() => {console.log(j) },   i * 1000)     })(i)
+}
+
 
 
 //console.log(false == '0');   // true
@@ -42,3 +43,4 @@ console.log('========================== IT_KAM_SA1 =========================');
 // console.log(+'1' + '1' + '2');   // '112'
 // console.log('A' - 'B' + '2');   // NaN2
 // console.log('A' - 'B' + 2);    // NaN
+console.log('a' - 's' + '4');    // NaN
