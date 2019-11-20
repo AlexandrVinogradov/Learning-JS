@@ -2,11 +2,20 @@
   padding: 0;
   margin: 0; }
 
+a {
+  color: black; }
+  a:hover {
+    color: red; }
+  a:active {
+    color: blue; }
+  a:visited {
+    color: green; }
+
 body {
   background: grey; }
 
 .first {
-  background: wheat;
+  background: white;
   height: 100px;
   margin-bottom: 20px;
   width: 30%;
@@ -25,6 +34,8 @@ body {
         font-weight: bold;
         font-family: Arial, sans-serif;
         color: blue; }
+        #central_block ul li a:hover {
+          color: red; }
     #central_block ul a {
       font-size: 1.1em;
       font-weight: light;
@@ -33,7 +44,7 @@ body {
 
 .block:not(.first) {
   padding: 20px 40px 30px;
-  background: wheat;
+  background: white;
   height: 100px;
   margin-bottom: 20px;
   width: 30%;

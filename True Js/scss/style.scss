@@ -1,4 +1,4 @@
-$bgColor: wheat;
+$bgColor: white;
 $blockWidth: 30%;
 $border: 4px solid red;
 $mainFontSize: 1.1em;
@@ -15,6 +15,26 @@ $mainFontSize: 1.1em;
 @mixin padd($padd...) {
     padding: $padd;
 }
+// link 
+@mixin link($link, $hover, $active, $visited) {
+    a{
+        color: $link;
+
+        &:hover {
+            color: $hover;
+        }
+        &:active {
+            color: $active;
+        }
+        &:visited {
+            color: $visited;
+        }
+    }
+}
+@include link(black, red, blue, green);
+
+
+
 
 body {
     background: grey;
@@ -40,6 +60,11 @@ body {
             a {
                 @include font ($fontW: bold, $color: blue);
                 //color: blue;
+
+                //pseudo classes
+                &:hover {
+                    color: red;
+                }
             }
         }
         a {
