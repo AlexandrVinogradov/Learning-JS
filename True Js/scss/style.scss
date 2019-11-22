@@ -1,40 +1,13 @@
-$bgColor: white;
-$blockWidth: 30%;
-$border: 4px solid red;
-$mainFontSize: 1.1em;
+@import "variables";
+@import "mixins";
+
 * {
     padding: 0;
     margin: 0;
 }
-@mixin font ( $fontW, $color: grey,) { //initial value
-    font-size: $mainFontSize;
-    font-weight: $fontW;
-    font-family: Arial, sans-serif;
-    color: $color;
-}
-@mixin padd($padd...) {
-    padding: $padd;
-}
-// link 
-@mixin link($link, $hover, $active, $visited) {
-    a{
-        color: $link;
 
-        &:hover {
-            color: $hover;
-        }
-        &:active {
-            color: $active;
-        }
-        &:visited {
-            color: $visited;
-        }
-    }
-}
+
 @include link(black, red, blue, green);
-
-
-
 
 body {
     background: grey;
