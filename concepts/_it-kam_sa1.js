@@ -43,4 +43,14 @@ for( var i=0; i<5; i++) {
 // console.log(+'1' + '1' + '2');   // '112'
 // console.log('A' - 'B' + '2');   // NaN2
 // console.log('A' - 'B' + 2);    // NaN
-console.log('a' - 's' + '4');    // NaN
+// console.log('a' - 's' + '4');    // NaN4
+
+
+for(let i=0; i<5; i++) {
+    setTimeout( () => {console.log(i);}, i * 1000 )
+}
+
+for(var i=0; i<5; i++) {
+    ((j) => setTimeout(() => {console.log(j);}, i * 1000) )(i)
+}
+
