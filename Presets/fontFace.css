@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "ArialRegular";
+  src: url("../../fonts/ArialRegular/ArialRegular.eot"); 
+  src: url("../../fonts/ArialRegular/ArialRegular.eot?#iefix") format('embedded-opentype'), 
+  url("../../fonts/ArialRegular/ArialRegular.woff2") format('woff2'),
+  url("../../fonts/ArialRegular/ArialRegular.woff") format('woff'),
+  url("../../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+}
+
+/*   eot   woff2   woff   ttf */
+/* font convettator: https://onlinefontconverter.com/  */

@@ -17,6 +17,7 @@ items.forEach(i =>                                          console.log('FOREACH
 const hasInexpensiveItems = items.some(i => i.price <=10);  console.log('SOME: ',     hasInexpensiveItems); // return true/false (at least one value)
 const allMostExpensive = items.every(i => i.price >=1000);  console.log('EVERY: ',    hasInexpensiveItems); // return true/false (if all elements satisfy the condition)
 const total = items.reduce((summ, i) => i.price + summ, 0); console.log('REDUCE: ',   total);               // summ without additional variable 
+
 const items2 = [1, 2, 3, 4, 5] 
 const includesTwo = items2.includes(0);                     console.log('INCLUDES: ', includesTwo);         // return true/false array contain whether value
 

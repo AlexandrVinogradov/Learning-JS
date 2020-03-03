@@ -1,7 +1,18 @@
 let a = {}
+let b = {}
+let i = {}
 a.name = 'Sam';
 a['color'] = 'red';
+b[a][i] = { isMine: false, opened: false, row: i};
 console.log(a);
+
+
+let GRID_ROWS = 5;
+let randomRow = Math.floor(Math.random() * GRID_ROWS);
+console.log(randomRow);
+
+
+
 
 
 var d = {}
@@ -53,4 +64,7 @@ for(let i=0; i<5; i++) {
 for(var i=0; i<5; i++) {
     ((j) => setTimeout(() => {console.log(j);}, i * 1000) )(i)
 }
+
+
+
 

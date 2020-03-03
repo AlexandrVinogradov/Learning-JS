@@ -24,3 +24,39 @@ for( var i=0; i<5; i++) {
 setTimeout(() => {
     
 }, timeout);
+
+
+
+
+let c = [1, 5, 6, 6, 10]
+
+const ourPain = (c) => {
+    let n = [];
+    return {
+        add: function() {
+            c.push(3)
+            console.log(c);
+        }
+        
+    }
+}
+
+let start = ourPain()
+start.add(c)
+ourPain(c);
+console.log(c);
+
+
+
+
+
+
+
+setInterval( () => {
+    console.log('oi');
+}, 1000 );
+clearInterval()
+
+setTimeout(()=>{
+    console.log('hi')
+}, 2000);
