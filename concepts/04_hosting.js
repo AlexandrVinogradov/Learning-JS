@@ -24,7 +24,7 @@ function square(numb) {
 console.log(square(9));
 
 console.log('===========function expression===========================');
-// console.log(foo(7)); // error
+console.log(foo(7)); // error
 const foo = function (numb) {
     return numb ** 2
 }
