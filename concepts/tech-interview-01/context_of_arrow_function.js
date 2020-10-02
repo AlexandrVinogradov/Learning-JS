@@ -19,6 +19,12 @@ const person = {
   },
 };
 
+function fooNew() {
+  let bb = 99
+  console.log(this);
+} 
+new fooNew // fooNew {}
+
 // person.log() // object person
 // person.arrowLog() // global object window like {}
 // person.delayLog(); // стрелочная функция не привязала контекст к window (у setTimeout)  
