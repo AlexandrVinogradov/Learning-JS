@@ -21,11 +21,12 @@ const person = {
 
 function fooNew() {
   let bb = 99
+  this.a = 100
   console.log(this);
-} 
+}
 new fooNew // fooNew {}
 
-// person.log() // object person
+person.log() // object person
 // person.arrowLog() // global object window like {}
 // person.delayLog(); // стрелочная функция не привязала контекст к window (у setTimeout)  
 
@@ -46,4 +47,18 @@ new fooNew // fooNew {}
 // }
 // console.log([5, 5, 6].increment(4));
 
- 
+// ==================================================================
+// const obj = {
+  
+//   method() {
+//     this.a = 4
+//     console.log(this);
+
+//     const foo = () => {
+//       this.b = 10
+//       console.log(this.a);
+//     }
+//     foo()
+//   }
+// }
+// obj.method()
