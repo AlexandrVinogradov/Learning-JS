@@ -13,7 +13,6 @@ var fruits = {
 }
 
 
-
 const foo = Object.keys(fruits).sort().map(el => ({[el] : fruits[el]}))
 console.log(foo);
 
